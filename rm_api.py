@@ -1,11 +1,12 @@
-#/** 
+  # 
   # Python Skript für Redmine API-Aufruf
   #
   # @author BI-Concepts GmbH
-  # @param 
+  # @param t -> task as string
   # @param i -> id as integer
+  # @param v -> value as integer
   # @return
-  #/
+  #
 
 
 import sys
@@ -27,6 +28,9 @@ if task == 'uis':
 #uip-updateissueprogress value progress in %
 if task == 'uip':
   issue = redmine.issue.update (ids, done_ratio=value)
+#sin-setissuenumber value AlbakomTicketNummer
+if task == 'sin':
+  issue = redmine.issue.update (ids, custom_fields=[{'id':4, 'value':value}])  
 issue
 print(issue)
 
