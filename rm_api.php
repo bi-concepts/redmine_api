@@ -26,7 +26,7 @@ include_once('functions.php');
 
 //Werte pruefen
 $werteok=0;
-$task_value=array("gii","uis","uip");
+$task_value=array("gii","uis","uip","sin");
 if(in_array($task,$task_value)){
  if(is_numeric($id)){ 
   if(is_numeric($value)){
@@ -37,7 +37,7 @@ if(in_array($task,$task_value)){
  
 //Python Skript via exec ausfuehren
 if($werteok===1){  
-  exec("python3 /var/www/html/redmine/rm_api.py $task $id $value", $ausgabe);
+  exec("python3 /var/www/html/redmine_api/rm_api.py $task $id $value", $ausgabe);
 }else{die('Error');}
 echo json_encode($ausgabe);
 
