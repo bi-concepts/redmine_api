@@ -1,2 +1,3 @@
 # redmine_api
-PHP-Pyhton API to interact with redmine
+Python Email API interact with redmine
+PHP-Pyhton REST API to interact with redmine
