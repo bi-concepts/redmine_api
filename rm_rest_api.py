@@ -16,7 +16,7 @@ task = sys.argv[1]
 ids = sys.argv[2]
 value = sys.argv[3]
 
-redmine = Redmine('http://localhost:3000', username='admin', password='Open9893@q')
+redmine = Redmine('http://localhost:3001', username='admin', password='Open9893@q')
 project = redmine.project.get(1)
 
 #gii-getissueinfo
