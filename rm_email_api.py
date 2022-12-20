@@ -1,3 +1,5 @@
+#Python API written by BI-Concepts GmbH
+
 import imaplib
 import email
 from email.header import decode_header
