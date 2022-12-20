@@ -37,7 +37,7 @@ if(in_array($task,$task_value)){
  
 //Python Skript via exec ausfuehren
 if($werteok===1){  
-  exec("python3 /var/www/html/redmine_api/rm_api.py $task $id $value", $ausgabe);
+  exec("python3 /var/www/html/redmine/redmine_api/rm_rest_api.py $task $id $value", $ausgabe);
 }else{die('Error');}
 echo json_encode($ausgabe);
 
