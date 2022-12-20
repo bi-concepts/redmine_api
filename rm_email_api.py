@@ -1,4 +1,5 @@
 #Python API written by BI-Concepts GmbH
+#read imap set value to redmine
 
 import imaplib
 import email
